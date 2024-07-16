@@ -5,7 +5,7 @@ const app = express()
 app.use(cors())
 const PORT = 4000
 
-app.get('/welcome', (req, res) => {
+app.get('/', (req, res) => {
     res.status(200).json({msg:"Welcome guys!"})
 })
 
